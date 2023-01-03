@@ -2,3 +2,36 @@ baseURL: "https://snicoll.be/"
 languageCode: "en"
 title: "Stéphane Nicoll"
 theme: "anatole"
+
+params:
+  title: "Stéphane Nicoll"
+  author: "Stéphane Nicoll"
+  description: "Software Engineer. International Conference Speaker. Spring Framework & Spring Boot Team Member."
+  profilePicture: "images/profile.png"
+  displayMode: dark
+  doNotLoadAnimations: true
+
+  socialIcons:
+    - title: "GitHub"
+      icon: "fab fa-github"
+      url:  "https://github.com/snicoll"
+    - title:  "Twitter"
+      icon:  "fab fa-twitter"
+      url: "https://twitter.com/snicoll"
+    - title: "Mastodon"
+      icon: "fab fa-mastodon"
+      url: "https://mastodon.online/@snicoll"
+    - title: "Linkedin"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/snicoll"
+
+menu:
+  main:
+    - identifier: "presentations"
+      name: "Presentations"
+      weight: 1
+      url : "/presentations/"
+    - identifier: "posts"
+      name: "Posts"
+      weight: 2
+      url : "/posts/"
