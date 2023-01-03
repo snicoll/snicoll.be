@@ -1,3 +1,4 @@
 baseURL: "https://snicoll.be/"
 languageCode: "en"
 title: "Stéphane Nicoll"
+theme: "anatole"
