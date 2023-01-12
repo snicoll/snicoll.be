@@ -1,0 +1,12 @@
+{{ $countries := slice }}
+{{ range .Pages.ByDate }}
+  {{ if ne .Params.country nil }}
+    {{ $countries = append (slice .Params.country) $countries }}
+  {{ end }}
+{{ end }}
+{{ $countries = $countries | uniq }}
+<p>I had the privilege of speaking in {{ $countries | len }} different countries<br/>
+{{ range $country := $countries }}
+  {{ partial "render-flag.html" (dict "country" . "countriesDict" $.Site.Data.countries) }}
+{{ end }}
+</p>

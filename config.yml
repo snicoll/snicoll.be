@@ -11,6 +11,10 @@ params:
   displayMode: dark
   doNotLoadAnimations: true
 
+  flags:
+    width: 24
+    height: 18
+
   socialIcons:
     - title: "GitHub"
       icon: "fab fa-github"
