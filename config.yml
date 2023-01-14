@@ -29,6 +29,9 @@ params:
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/snicoll"
 
+taxonomies:
+  country: "country"
+
 menu:
   main:
     - identifier: "presentations"
