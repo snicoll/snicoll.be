@@ -1,0 +1,6 @@
+<span>
+  {{ if gt . 1 }} co-speakers: {{ else }} co-speaker: {{ end }}
+  {{ range . }}
+    <a class href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  {{ end }}
+</span>
