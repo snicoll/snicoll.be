@@ -3,6 +3,8 @@ languageCode: "en"
 title: "Stéphane Nicoll"
 theme: "anatole"
 
+googleAnalytics: G-T67PKLEB0Z
+
 params:
   title: "Stéphane Nicoll"
   author: "Stéphane Nicoll"
