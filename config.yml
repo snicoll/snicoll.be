@@ -30,6 +30,9 @@ params:
     - title: "Linkedin"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/snicoll"
+    - title: "hello@snicoll.be"
+      icon: "fas fa-envelope"
+      url:  "mailto:hello@snicoll.be"
 
 taxonomies:
   country: "country"
