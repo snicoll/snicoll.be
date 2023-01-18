@@ -20,9 +20,9 @@ params:
   socialIcons:
     - title: "GitHub"
       icon: "fab fa-github"
-      url:  "https://github.com/snicoll"
-    - title:  "Twitter"
-      icon:  "fab fa-twitter"
+      url: "https://github.com/snicoll"
+    - title: "Twitter"
+      icon: "fab fa-twitter"
       url: "https://twitter.com/snicoll"
     - title: "Mastodon"
       icon: "fab fa-mastodon"
@@ -32,7 +32,7 @@ params:
       url: "https://www.linkedin.com/in/snicoll"
     - title: "hello@snicoll.be"
       icon: "fas fa-envelope"
-      url:  "mailto:hello@snicoll.be"
+      url: "mailto:hello@snicoll.be"
 
 taxonomies:
   country: "country"
