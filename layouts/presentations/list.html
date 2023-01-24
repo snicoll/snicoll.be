@@ -7,40 +7,6 @@
     {{ end }}"
   >
     {{ partial "render-presentations-summary.html" . }}
-    {{ range .Data.Pages.GroupByDate "2006" }}
-      <div class="archive__heading">{{ .Key }}</div>
-      {{ range .Pages }}
-        <ul class="archive__list">
-          <li class="archive__list-item">
-            <a class="archive__list-title" href="{{ .Params.externalLink | default .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
-            <div class="archive__list-detail">
-              {{ if .Params.online }}
-                Online
-              {{ else if isset .Params "conference" }}
-               {{ .Params.conference }}
-              {{ end }}
-            </div>
-            <div class="archive__list-date">
-              {{ if isset .Site.Params "listdateformat" }}
-                {{ if .Site.Params.localizedDates }}
-                  {{ time.Format .Site.Params.listDateFormat .Date }}
-                {{ else }}
-                  {{ .Date.Format .Site.Params.listDateFormat }}
-                {{ end }}
-
-              {{ else }}
-                {{ if .Site.Params.localizedDates }}
-                  {{ time.Format "Jan 2" .Date }}
-                {{ else }}
-                  {{ .Date.Format "Jan 2" }}
-                {{ end }}
-
-              {{ end }}
-            </div>
-          </li>
-        </ul>
-      {{ end }}
-
-    {{ end }}
+    {{ partial "render-presentations-list" . }}
   </div>
 {{ end }}
