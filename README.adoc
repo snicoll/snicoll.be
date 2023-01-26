@@ -1,0 +1,33 @@
+= snicoll.be
+
+This repository hosts the source code for https://snicoll.be.
+
+== Running locally
+
+This website uses https://gohugo.io[Hugo].
+If you haven't installed it yet, follow the instructions of the https://gohugo.io/installation/[install section].
+
+This repository uses submodules so you need to clone it as follows:
+
+[indent=0]
+----
+    $ git clone --recursive https://github.com/snicoll/snicoll.be.git
+----
+
+To run your local copy of the website, use the regular Hugo `serve` command:
+
+[indent=0]
+----
+    $ hugo serve
+----
+
+
+
+== Special Thanks 🙏
+
+* https://github.com/bep[Bjørn Erik Pedersen], for the work on https://github.com/gohugoio[Hugo].
+* https://github.com/lxndrblz[Alexander Bilz], for the work on the https://github.com/lxndrblz/anatole[Anatole Theme].
+* https://discourse.gohugo.io/u/jmooring/summary[Joe Morring], for tirelessly helping folks on the Hugo support forum.
+* https://pages.github.com[GitHub], for the hosting and deployment.
+
+
