@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div
+        class="archive {{ with .Site.Params.doNotLoadAnimations }}
+      .
+    {{ else }}
+      animated fadeInDown
+    {{ end }}"
+>
+    {{ $countryDesc := index $.Site.Data.countries .Title }}
+    <p>These are the presentations that I've given in {{$countryDesc}}.</p>
+    {{ partial "render-presentations-list" . }}
+</div>
+{{ end }}

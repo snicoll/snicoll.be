@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+{{ $presentationsByCountry := newScratch }}
+{{ range (where .Site.AllPages "Section" "presentations") }}
+{{ with .Params.country }}
+  {{ $countryId := lower . }}
+  {{ if eq ($presentationsByCountry.Get $countryId) nil }}
+    {{ $presentationsByCountry.Set $countryId 0 }}
+  {{ end }}
+  {{ $presentationsByCountry.Set $countryId (add ($presentationsByCountry.Get $countryId) 1) }}
+{{ end }}
+{{ end }}
+
+{{ $pagesByCountry := slice }}
+{{ range .Pages }}
+  {{ $countryName := index site.Data.countries .Data.Term }}
+  {{ $pagesByCountry = $pagesByCountry | append (dict "countryName" $countryName "page" . ) }}
+{{ end }}
+
+<div class="archive">
+{{ range sort $pagesByCountry "countryName" }}
+  {{ $countryId := lower .page.Title }}
+  {{ $countryName := .countryName }}
+  <ul><li class="archive__list-item">
+    {{ $path := printf "flag-icons/flags/4x3/%s.svg" $countryId }}
+    {{ with resources.Get $path }}
+    <span>
+      <img src="{{ .RelPermalink }}"
+           width="{{ string site.Params.flags.width }}"
+           height="{{ string site.Params.flags.height }}"
+           alt="{{ $countryName }}" title="{{ $countryName }}">
+    {{ end }}
+    {{ .countryName }}
+    </span>
+    {{ $sessionsCount := $presentationsByCountry.Get $countryId }}
+    <a class="archive__list-date" href="{{ .page.RelPermalink }}" title="Presentations in {{.page.Title}}">{{ $sessionsCount }} {{ cond (eq $sessionsCount 1) "Presentation" "Presentations" }}</a>
+        </li>
+  </ul>
+{{ end }}
+</div>
+
+{{ end }}
