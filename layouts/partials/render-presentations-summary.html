@@ -5,7 +5,7 @@
   {{ end }}
 {{ end }}
 {{ $countries = $countries | uniq }}
-<p>I had the privilege of speaking in {{ $countries | len }} different countries<br/>
+<p>I had the privilege of speaking in <a href="/country">{{ $countries | len }} different countries</a><br/>
 {{ range $country := $countries }}
   {{ partial "render-flag.html" (dict "country" . "countriesDict" $.Site.Data.countries) }}
 {{ end }}
