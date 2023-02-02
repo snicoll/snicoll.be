@@ -31,6 +31,12 @@
       </div>
     </div>
   {{ end }}
+  <div class="post">
+      <p>
+          I enjoy speaking at conferences and meeting the community face-to-face. Here is
+          a list of talks that I have given over the years.
+      </p>
+  </div>
 
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
   {{ range $paginator.Pages }}
