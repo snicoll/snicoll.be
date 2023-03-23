@@ -3,6 +3,7 @@ languageCode: "en"
 title: "Stéphane Nicoll"
 theme: "anatole"
 
+buildFuture: true
 googleAnalytics: G-T67PKLEB0Z
 
 params:

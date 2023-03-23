@@ -31,6 +31,7 @@
       </div>
     </div>
   {{ end }}
+  {{ partial "render-upcoming-presentations.html" . }}
   <div class="post">
       <p>
           I enjoy speaking at conferences and meeting the community face-to-face. Here is
@@ -38,7 +39,7 @@
       </p>
   </div>
 
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+  {{ $paginator := .Paginate (where (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) ".Params.upcoming" "!=" true) }}
   {{ range $paginator.Pages }}
     <div
       class="post {{ with .Site.Params.doNotLoadAnimations }}
