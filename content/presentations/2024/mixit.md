@@ -1,5 +1,5 @@
 ---
-date: "2024-04-25"
+date: "2024-04-26 14:40:00"
 title: "Rechargez vos applications web avec Spring Boot"
 conference: "MiXiT"
 country: "FR"
