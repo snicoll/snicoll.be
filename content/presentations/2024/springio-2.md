@@ -4,5 +4,7 @@ title: "Hitting the “refresh” button on your Spring web application"
 conference: "Spring I/O"
 country: "ES"
 speakers: "bclozel"
-externalLink: https://2024.springio.net/sessions/hitting-the-refresh-button-on-your-spring-web-application/
+youtubeId: e50AU0DICPw
 ---
+
+{{< youtube id="e50AU0DICPw" title="Hitting the “refresh” button on your Spring web application" >}}
