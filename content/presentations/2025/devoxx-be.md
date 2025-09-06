@@ -1,5 +1,5 @@
 ---
-date: "2025-10-08"
+date: "2025-10-10 10:40:00"
 title: "Spring Boot: Chapter 4"
 conference: "Devoxx"
 country: "BE"
