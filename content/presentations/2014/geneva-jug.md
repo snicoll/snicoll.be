@@ -1,7 +1,7 @@
 ---
 date: "2014-11-25"
 title: "From Zero to Hero with Spring Boot"
-conference: "GenevaJUG"
+conference: "Geneva JUG"
 country: "CH"
 youtubeId: "PZuIEUQZFcE"
 ---

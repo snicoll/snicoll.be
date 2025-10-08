@@ -1,7 +1,7 @@
 ---
 date: "2019-03-26"
 title: "Applications Web efficaces avec Spring Boot 2"
-conference: "GenevaJUG"
+conference: "Geneva JUG"
 country: "CH"
 youtubeId: "t3-zt3kgP9M"
 ---
