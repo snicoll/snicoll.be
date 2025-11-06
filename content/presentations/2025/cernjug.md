@@ -4,5 +4,5 @@ title: "Spring Boot: Chapter 4"
 conference: "CERN JUG"
 country: "CH"
 speakers: [ "bclozel" ]
-upcoming: true
+externalLink: https://indico.cern.ch/event/1605383/
 ---
