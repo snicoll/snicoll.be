@@ -4,5 +4,4 @@ title: "Spring Boot: Chapter 4"
 conference: "JFall"
 country: "NL"
 externalLink: https://jfall.nl/timetable-2025/
-upcoming: true
 ---
