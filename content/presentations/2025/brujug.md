@@ -4,4 +4,5 @@ title: "Spring Boot: Chapter 4"
 conference: "BruJUG"
 country: "BE"
 externalLink: https://www.meetup.com/brujug/events/311887146/
+upcoming: true
 ---
