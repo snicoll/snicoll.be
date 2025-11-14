@@ -4,5 +4,4 @@ title: "Spring Boot: Chapitre 4"
 conference: "FinistDevs"
 country: "FR"
 externalLink: https://www.meetup.com/finistdevs/events/311835949/
-upcoming: true
 ---
