@@ -4,5 +4,4 @@ title: "Spring Boot: Chapitre 4"
 conference: "YaJUG"
 country: "LU"
 externalLink: https://yajug.lu/session/spring-boot-chapitre-4/
-upcoming: true
 ---
