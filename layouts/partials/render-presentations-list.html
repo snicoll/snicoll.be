@@ -5,9 +5,7 @@
     <li class="archive__list-item">
         <a class="archive__list-title" href="{{ .Params.externalLink | default .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
         <div class="archive__list-detail">
-            {{ if .Params.online }}
-            Online
-            {{ else if isset .Params "conference" }}
+            {{ if isset .Params "conference" }}
             {{ .Params.conference }}
             {{ end }}
         </div>

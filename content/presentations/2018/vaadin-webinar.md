@@ -1,7 +1,8 @@
 ---
 date: "2018-08-14"
 title: "Building Spring Boot apps with Vaadin 10"
-online: true
+conference: "Vaadin Webinar"
+country: "OL"
 speakers: "mtahvonen"
 youtubeId: "-BlJQqT8Kpg"
 ---

@@ -1,7 +1,8 @@
 ---
 date: "2016-10-18"
 title: "Java web apps with Spring and Vaadin"
-online: true
+conference: "Vaadin Webinar"
+country: "OL"
 speakers: "mtahvonen"
 youtubeId: "6FjjVKmEdY4"
 ---

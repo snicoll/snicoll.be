@@ -2,7 +2,7 @@
 date: "2021-04-08"
 title: "Efficient Web Apps with Spring Boot"
 conference: "Italian JUG"
-online: true
+country: "OL"
 speakers: "bclozel"
 youtubeId: "pzT1Iq4Vmo0"
 ---

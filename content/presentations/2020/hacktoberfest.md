@@ -2,7 +2,7 @@
 date: "2020-07-20"
 title: "Hacktoberfest - Contributing to Spring Boot"
 conference: "Hacktoberfest"
-online: true
+country: "OL"
 youtubeId: "iLN_WZQGxH4"
 ---
 

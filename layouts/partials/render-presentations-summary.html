@@ -1,6 +1,6 @@
 {{ $countries := slice }}
 {{ range .Pages.ByDate }}
-  {{ if ne .Params.country nil }}
+  {{ if and (ne .Params.country nil) (ne .Params.country "OL") }}
     {{ $countries = append (slice .Params.country) $countries }}
   {{ end }}
 {{ end }}

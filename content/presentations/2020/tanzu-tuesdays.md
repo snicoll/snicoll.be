@@ -3,7 +3,7 @@ date: "2020-10-21"
 title: "Spring Boot loves k8s"
 conference: "Tanzu Tuesdays"
 speakers: "bclozel"
-online: true
+country: "OL"
 youtubeId: "aT0Mby1IuI4"
 ---
 

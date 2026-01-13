@@ -2,7 +2,7 @@
 date: "2024-04-28"
 title: "Entretien avec Stéphane Nicoll"
 conference: "Chillotech"
-online: true
+country: "OL"
 youtubeId: ioY8FzC6FoI
 ---
 

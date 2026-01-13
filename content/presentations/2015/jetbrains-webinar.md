@@ -1,7 +1,8 @@
 ---
 date: "2015-03-31"
 title: "Spring Boot Support in IntelliJ IDEA 14.1"
-online: true
+conference: "JetBrains Webinar"
+country: "OL"
 youtubeId: "IUb52gHQGLE"
 ---
 

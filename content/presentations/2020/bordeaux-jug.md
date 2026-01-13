@@ -3,7 +3,7 @@ date: "2020-09-10"
 title: "Spring Boot loves k8s"
 conference: "Bordeaux JUG"
 speakers: "bclozel"
-online: true
+country: "OL"
 youtubeId: "SncAh_jkryc"
 ---
 
