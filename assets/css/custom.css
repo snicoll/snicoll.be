@@ -13,3 +13,11 @@
     }
 
 }
+
+.country-flag-item {
+    margin-right: 5px;
+}
+
+.country-flag-item:last-child {
+    margin-right: 0;
+}

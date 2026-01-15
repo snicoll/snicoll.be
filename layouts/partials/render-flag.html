@@ -2,7 +2,7 @@
 {{ $countryDesc := index .countriesDict $country }}
 {{ $path := printf "flag-icons/flags/4x3/%s.svg" (lower $country) }}
 {{ with resources.Get $path }}
-<span>
+<span class="country-flag-item">
   <a href="{{ printf `/country/%s` (lower $country) }}">
   <img src="{{ .RelPermalink }}"
        width="{{ string site.Params.flags.width }}"
@@ -12,5 +12,5 @@
   </a>
 </span>
 {{ else }}
-  {{ errorf "Unable to find %s" $path }}
+{{ errorf "Unable to find %s" $path }}
 {{ end }}
