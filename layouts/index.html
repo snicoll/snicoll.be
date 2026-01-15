@@ -22,15 +22,16 @@
     </div>
 </div>
 {{ end }}
-{{ partial "render-upcoming-presentations.html" . }}
+
 <div class="post">
     <p>
-        I enjoy speaking at conferences and meeting the community face-to-face. Here is
-        a list of presentations that I have given over the years.
+        I enjoy speaking at conferences and meeting the community face-to-face. Below is my schedule
+        of upcoming talks, followed by a complete archive of presentations I've given over the years.
     </p>
 </div>
 
-{{ $paginator := .Paginate (where (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) ".Params.upcoming" "!=" true) }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+
 <style>
     .conf-header {
         display: flex;
@@ -41,22 +42,34 @@
 
     @media (max-width: 600px) {
         .conf-header {
-            flex-direction: column; /* La date passe en dessous */
-            align-items: flex-start; /* Tout aligné à gauche */
+            flex-direction: column;
+            align-items: flex-start;
         }
         .conf-date {
             margin-top: 2px;
-            font-size: 0.8rem; /* Un peu plus petit */
-            color: #888; /* Un peu plus discret */
+            font-size: 0.8rem;
+            color: #888;
         }
     }
+
+    /* Optional: Style for the horizontal flag list if you use the partial inside the loop */
+    .country-flag-item {
+        margin-right: 5px;
+        display: inline-block;
+    }
+    .country-flag-item:last-child {
+        margin-right: 0;
+    }
 </style>
+
 {{ range $paginator.Pages }}
-<div class="post {{ with .Site.Params.doNotLoadAnimations }}
-        .
-      {{ else }}
-        animated fadeInDown
-      {{ end }}"
+{{ $isFuture := .Date.After now }}
+
+<div class="post {{ if $isFuture }}upcoming-post{{ end }} {{ with .Site.Params.doNotLoadAnimations }}
+            .
+          {{ else }}
+            animated fadeInDown
+          {{ end }}"
 >
     {{ if .Params.thumbnail }}
     <div class="post__thumbnail-wrapper">
@@ -84,7 +97,7 @@
                     <a href="/country/{{ $c }}" style="text-decoration: none; border: none; box-shadow: none;">
                         <img src="{{ .RelPermalink }}"
                              alt="{{ $c }}"
-                             style="cursor: pointer !important; height: 15px; width: auto; display: inline !important; border: none; box-shadow: none; margin-left: 5px; vertical-align: baseline;">
+                             style="height: 15px; width: auto; display: inline; border: none; box-shadow: none; margin-left: 5px; vertical-align: baseline; pointer-events: none;">
                     </a>
                     {{ end }}
                     {{ end }}
@@ -99,16 +112,14 @@
         {{ else }}
         <p>{{ .Summary | markdownify }}</p>
         {{ end }}
-        <!-- add read more -->
+
         {{- if and (.Truncated) (.Site.Params.readMore) -}}
         <a href="{{ .RelPermalink }}">{{ i18n "read_more" }}</a>
         {{- end -}}
     </div>
-
-    <!--  -->
-
 </div>
 {{ end }}
+
 <div class="pagination">
     {{ template "partials/pagination.html" . }}
 </div>

@@ -21,3 +21,11 @@
 .country-flag-item:last-child {
     margin-right: 0;
 }
+
+.upcoming-post {
+    border-left: 5px solid #61dafb;
+    background-color: rgba(97, 218, 251, 0.03);
+    padding-left: 15px !important;
+    border-radius: 0 5px 5px 0;
+    position: relative;
+}
