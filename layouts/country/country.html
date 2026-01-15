@@ -1,13 +1,13 @@
 {{ define "main" }}
-<div
-        class="archive {{ with .Site.Params.doNotLoadAnimations }}
-      .
-    {{ else }}
-      animated fadeInDown
-    {{ end }}"
->
-    {{ $countryDesc := index $.Site.Data.countries .Title }}
-    <p>These are the presentations that I've given in {{$countryDesc}}.</p>
+<div class="archive ..."> {{ $country := index $.Site.Data.countries .Title }}
+
+    {{ $prefix := "in " }}
+    {{ if isset $country "prefix" }}
+    {{ $prefix = $country.prefix }}
+    {{ end }}
+
+    <p>These are the presentations that I've given {{ $prefix }}{{ $country.name }}.</p>
+
     {{ partial "render-presentations-list" . }}
 </div>
 {{ end }}
