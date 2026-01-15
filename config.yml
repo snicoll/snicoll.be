@@ -11,6 +11,7 @@ params:
   author: "Stéphane Nicoll"
   description: "Software Engineer. International Conference Speaker. Spring Framework & Spring Boot Team Member."
   profilePicture: "images/profile.png"
+  copyright: "2023-{{ YEAR }}"
   displayMode: dark
   doNotLoadAnimations: true
 
