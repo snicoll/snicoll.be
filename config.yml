@@ -53,3 +53,7 @@ menu:
       name: "Posts"
       weight: 2
       url : "/posts/"
+    - identifier: "about"
+      name: "About Me"
+      weight: 3
+      url : "/about"
