@@ -18,7 +18,7 @@ I remember distinctly what it feels like to be on the other side, managing compl
 
 Because of that background, I have a special place in my heart for [**Spring Initializr**](start.spring.io), a project I had the privilege of leading for several years. Knowing that I can help a developer get from "idea" to "running code" in seconds is exactly why I do what I do.
 
-(If you are interested in the specific roles and projects I worked on prior to and during my time at Spring, I keep a detailed **[CV available here](/snicoll.pdf)** for reference.)
+(If you are interested in the specific roles and projects I worked on prior to and during my time at Spring, I keep a detailed **[CV available here](/snicoll.pdf)** for reference.
 
 ### What Drives Me
 
