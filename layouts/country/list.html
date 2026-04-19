@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ $presentationsByCountry := newScratch }}
-{{ range (where .Site.AllPages "Section" "presentations") }}
+{{ range (where site.RegularPages "Section" "presentations") }}
 {{ with .Params.country }}
   {{ $countryId := lower . }}
   {{ if eq ($presentationsByCountry.Get $countryId) nil }}
@@ -13,7 +13,7 @@
 
 {{ $pagesByCountry := slice }}
 {{ range .Pages }}
-  {{ $countryName := index site.Data.countries .Data.Term }}
+  {{ $countryName := index hugo.Data.countries .Data.Term }}
   {{ $pagesByCountry = $pagesByCountry | append (dict "countryName" $countryName "page" . ) }}
 {{ end }}
 

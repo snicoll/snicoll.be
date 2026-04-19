@@ -107,12 +107,7 @@
                     {{ .Date.Format "Jan 02, 2006" }}
             </span>
         </h3>
-        {{ if .Site.Params.fullPostContent }}
-        <p>{{ .Content | markdownify }}</p>
-        {{ else }}
-        <p>{{ .Summary | markdownify }}</p>
-        {{ end }}
-
+        
         {{- if and (.Truncated) (.Site.Params.readMore) -}}
         <a href="{{ .RelPermalink }}">{{ i18n "read_more" }}</a>
         {{- end -}}

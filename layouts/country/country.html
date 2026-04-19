@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="archive ..."> {{ $country := index $.Site.Data.countries .Title }}
+<div class="archive ..."> {{ $country := index hugo.Data.countries .Title }}
     {{ $prefix := "in " }}
     {{ if isset $country "prefix" }}
       {{ $prefix = $country.prefix }}

@@ -7,6 +7,6 @@
 {{ $countries = $countries | uniq }}
 <p>I had the privilege of speaking in <a href="/country">{{ $countries | len }} countries</a><br/>
 {{ range $country := $countries }}
-  {{ partial "render-flag.html" (dict "country" . "countriesDict" $.Site.Data.countries) }}
+  {{ partial "render-flag.html" (dict "country" . "countriesDict" hugo.Data.countries) }}
 {{ end }}
 </p>
